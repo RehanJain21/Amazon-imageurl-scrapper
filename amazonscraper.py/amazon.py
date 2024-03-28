@@ -1,5 +1,3 @@
-#4 amazon scrapper image url and sku name
-
 import requests
 from bs4 import BeautifulSoup
 import openpyxl
@@ -8,10 +6,9 @@ import random
 
 user_agents = [
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
-    # Add more user agents here
+  
 ]
 
-# Define the headers to mimic human behavior
 headers = {
     'User-Agent': random.choice(user_agents),
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -21,7 +18,6 @@ headers = {
     'Connection': 'keep-alive',
 }
 
-# Define scraping configurations
 scraping_configs =  [
 
      {#22
